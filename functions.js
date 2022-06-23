@@ -24,3 +24,13 @@ function add_num() {
 }
 
 add_num()
+
+
+//parameter in functions
+
+function with_params(value1, value2) {
+    const results = value1 + value2;
+    return console.log(results)
+}
+
+with_params (10, 20)
