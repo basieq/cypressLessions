@@ -41,3 +41,34 @@ console.log(names)
 //convert table into string
 const string_table = names.join(", "); //separator (", ")
 console.log(string_table);
+
+const table2 = ["Monica", "Rachel", "Ross"]
+
+//reverse elements in table
+table2.reverse();
+console.log(table2);
+
+//sorting 
+table2.sort(); //asc
+console.log(table2);
+
+table2.sort().reverse(); //desc 
+console.log(table2)
+
+//mapping
+table2.map(item => {
+    if (item.length > 5) {
+        console.log("Name " + item + " has more than 5 characters")
+    } else {
+        console.log("Name " + item + " has less than 5 characters")
+    }
+})
+
+
+//add table to table
+const cars = ["toyota", "peugeot"]
+const cars2 = ["fiat", "skoda", "VW"]
+
+const merged_cars = cars.concat(cars2)
+console.log(merged_cars);
+
